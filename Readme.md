@@ -292,11 +292,12 @@ npm run build
 Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
 
+<img width="1440" height="819" alt="Screenshot 2025-08-04 at 21 54 07" src="https://github.com/user-attachments/assets/766580b4-e822-4538-8fc2-fbceac5fecd4" />
 <img width="1446" height="806" alt="Screenshot 2025-08-04 at 21 51 24" src="https://github.com/user-attachments/assets/f2d7c705-ec7c-4737-877a-b0f5da4612d0" />
 <img width="1455" height="825" alt="Screenshot 2025-08-04 at 21 51 42" src="https://github.com/user-attachments/assets/b6d72bfb-6486-4a01-98bf-3ed1bf02a101" />
 <img width="1452" height="816" alt="Screenshot 2025-08-04 at 21 51 58" src="https://github.com/user-attachments/assets/12e5a6f3-29d6-44bd-bcce-bca87944637a" />
 <img width="1457" height="782" alt="Screenshot 2025-08-04 at 21 52 14" src="https://github.com/user-attachments/assets/60e0cc3f-4eed-42b1-a531-55e1a65b872e" />
-<img width="1440" height="819" alt="Screenshot 2025-08-04 at 21 54 07" src="https://github.com/user-attachments/assets/766580b4-e822-4538-8fc2-fbceac5fecd4" />
+
 
 
 
