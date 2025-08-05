@@ -294,7 +294,10 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 
 
 
-[⭐ Star no GitHub](https://github.com/seu-usuario/compliance-search) • [🚀 Deploy](https://compliancesearch.com) • [📖 Docs]<img width="1440" height="813" alt="Screenshot 2025-08-04 at 21 53 53" src="https://github.com/user-attachments/assets/e7e21a65-37c6-462f-a57a-96dcea6d0d3c" />
-(https://docs.compliancesearch.com)
+[⭐ Star no GitHub](https://github.com/seu-usuario/compliance-search) • [🚀 Deploy](https://compliancesearch.com) • 
+
+[📖 Docs]<img width="1440" height="813" alt="Screenshot 2025-08-04 at<img width="1440" height="819" alt="Screenshot 2025-08-04 at 21 54 07" src="https://github.com/user-attachments/assets/5c17233e-7319-4f50-985a-a843cd20952b" />
+ 21 53 53" src="https://github.com/user-attachments/assets/e7e21a65-37c6-462f-a57a-96dcea6d0d3c" />
+
 
 </div>
