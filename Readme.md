@@ -12,7 +12,7 @@
 - [Funcionalidades](#-funcionalidades)
 - [Arquitetura](#-arquitetura)
 - [Instalação](#-instalação)
-- [Como Usar](#-como-usar)<img width="1440" height="819" alt="Screenshot 2025-08-04 at 21 54 07" src="https://github.com/user-attachments/assets/629f25fe-7f58-4584-8653-3aa81f0d7130" />
+- [Como Usar](#-como-usar)
 
 - [API Endpoints](#-api-endpoints)
 - [Screenshots](#-screenshots)
