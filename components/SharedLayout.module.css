@@ -1,0 +1,301 @@
+.layout {
+  display: flex;
+  min-height: 100vh;
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-family-base);
+}
+
+.sidebar {
+  width: 280px;
+  background: linear-gradient(
+    180deg,
+    var(--sidebar) 0%,
+    color-mix(in srgb, var(--sidebar) 98%, var(--primary) 2%) 100%
+  );
+  border-right: 1px solid var(--border);
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  box-shadow: var(--shadow-md);
+  position: relative;
+}
+
+.sidebar::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    var(--primary) 20%,
+    var(--accent) 50%,
+    var(--secondary) 80%,
+    transparent 100%
+  );
+  opacity: 0.3;
+}
+
+.sidebarHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--spacing-6);
+  margin-bottom: var(--spacing-4);
+  border-bottom: 1px solid color-mix(in srgb, var(--border) 50%, transparent);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-3);
+}
+
+.logoIconWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-lg);
+  background: linear-gradient(
+    135deg,
+    var(--primary) 0%,
+    var(--accent) 100%
+  );
+  box-shadow: var(--shadow-glow);
+}
+
+.logoIconWrapper::before {
+  content: '';
+  position: absolute;
+  inset: 1px;
+  border-radius: inherit;
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--primary) 80%, white 20%) 0%,
+    color-mix(in srgb, var(--accent) 80%, white 20%) 100%
+  );
+  z-index: -1;
+}
+
+.logoIcon {
+  color: white;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.1));
+  z-index: 1;
+}
+
+.logoText {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.logoMain {
+  font-weight: var(--font-weight-bold);
+  font-size: 1.25rem;
+  color: var(--sidebar-foreground);
+  letter-spacing: var(--letter-spacing-tight);
+  font-family: var(--font-family-heading);
+}
+
+.logoSub {
+  font-weight: var(--font-weight-medium);
+  font-size: 0.75rem;
+  color: var(--muted-foreground);
+  letter-spacing: var(--letter-spacing-wide);
+  text-transform: uppercase;
+  font-family: var(--font-family-monospace);
+}
+
+.themeSwitch {
+  flex-shrink: 0;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-1);
+  padding: 0 var(--spacing-4);
+}
+
+.navLink {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-3);
+  padding: var(--spacing-3) var(--spacing-4);
+  border-radius: var(--radius-lg);
+  text-decoration: none;
+  color: var(--muted-foreground);
+  font-weight: var(--font-weight-medium);
+  font-size: 0.9375rem;
+  transition: all var(--animation-duration-normal) var(--animation-easing);
+  position: relative;
+  overflow: hidden;
+  font-family: var(--font-family-base);
+  letter-spacing: var(--letter-spacing-normal);
+}
+
+.navLink::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(
+    180deg,
+    var(--primary) 0%,
+    var(--accent) 100%
+  );
+  transform: scaleY(0);
+  transition: transform var(--animation-duration-normal) var(--animation-easing);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+}
+
+.navIconWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  transition: all var(--animation-duration-normal) var(--animation-easing);
+}
+
+.navLabel {
+  transition: all var(--animation-duration-normal) var(--animation-easing);
+}
+
+.navLink:hover {
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--primary) 8%, transparent) 0%,
+    color-mix(in srgb, var(--accent) 5%, transparent) 100%
+  );
+  color: var(--foreground);
+  transform: translateX(2px);
+  box-shadow: var(--shadow);
+}
+
+.navLink:hover::before {
+  transform: scaleY(1);
+}
+
+.navLink:hover .navIconWrapper {
+  transform: scale(1.1);
+  color: var(--primary);
+}
+
+.navLink.active {
+  background: linear-gradient(
+    135deg,
+    var(--primary) 0%,
+    color-mix(in srgb, var(--primary) 90%, var(--accent) 10%) 100%
+  );
+  color: var(--primary-foreground);
+  box-shadow: var(--shadow-glow);
+  transform: translateX(4px);
+}
+
+.navLink.active::before {
+  transform: scaleY(1);
+  background: var(--primary-foreground);
+}
+
+.navLink.active .navIconWrapper {
+  color: var(--primary-foreground);
+  transform: scale(1.05);
+}
+
+.navLink.active .navLabel {
+  font-weight: var(--font-weight-semibold);
+}
+
+.mainContent {
+  flex-grow: 1;
+  overflow-y: auto;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .layout {
+    flex-direction: column;
+  }
+  
+  .sidebar {
+    width: 100%;
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-3) var(--spacing-4);
+    background: linear-gradient(
+      90deg,
+      var(--sidebar) 0%,
+      color-mix(in srgb, var(--sidebar) 98%, var(--primary) 2%) 100%
+    );
+  }
+  
+  .sidebar::before {
+    height: 100%;
+    width: 1px;
+    background: linear-gradient(
+      180deg,
+      transparent 0%,
+      var(--primary) 20%,
+      var(--accent) 50%,
+      var(--secondary) 80%,
+      transparent 100%
+    );
+    top: 0;
+    left: auto;
+    right: 0;
+  }
+  
+  .sidebarHeader {
+    margin-bottom: 0;
+    border-bottom: none;
+    padding: 0;
+    gap: var(--spacing-4);
+  }
+  
+  .logoText {
+    display: none;
+  }
+  
+  .logoIconWrapper {
+    width: 36px;
+    height: 36px;
+  }
+  
+  .nav {
+    flex-direction: row;
+    padding: 0;
+    gap: var(--spacing-2);
+  }
+  
+  .navLabel {
+    display: none;
+  }
+  
+  .navLink {
+    padding: var(--spacing-2);
+    min-width: 44px;
+    justify-content: center;
+  }
+  
+  .navLink::before {
+    display: none;
+  }
+  
+  .themeSwitch {
+    order: 1;
+  }
+}
