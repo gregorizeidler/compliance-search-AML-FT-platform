@@ -12,7 +12,8 @@
 - [Funcionalidades](#-funcionalidades)
 - [Arquitetura](#-arquitetura)
 - [Instalação](#-instalação)
-- [Como Usar](#-como-usar)
+- [Como Usar](#-como-usar)<img width="1440" height="819" alt="Screenshot 2025-08-04 at 21 54 07" src="https://github.com/user-attachments/assets/629f25fe-7f58-4584-8653-3aa81f0d7130" />
+
 - [API Endpoints](#-api-endpoints)
 - [Screenshots](#-screenshots)
 - [Tecnologias](#-tecnologias)
@@ -302,7 +303,9 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 <div align="center">
 
 **Desenvolvido com ❤️ para tornar compliance mais simples e eficiente**
+![Uploading Screenshot 2025-08-04 at 21.54.07.png…]()
 
-[⭐ Star no GitHub](https://github.com/seu-usuario/compliance-search) • [🚀 Deploy](https://compliancesearch.com) • [📖 Docs](https://docs.compliancesearch.com)
+[⭐ Star no GitHub](https://github.com/seu-usuario/compliance-search) • [🚀 Deploy](https://compliancesearch.com) • [📖 Docs]<img width="1440" height="813" alt="Screenshot 2025-08-04 at 21 53 53" src="https://github.com/user-attachments/assets/e7e21a65-37c6-462f-a57a-96dcea6d0d3c" />
+(https://docs.compliancesearch.com)
 
 </div>
